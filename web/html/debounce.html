@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>debouonce测试</title>
+<script src="../js/jquery/jquery-3.3.1.min.js"></script>
+<script src="../js/lodash/lodash.min.js"></script>
+</head>
+<body>
+	<button id="debounce">debounce测试</button>
+</body>
+</html>
+<script>
+	$(function(){
+		$("#debounce").click(_.debounce(function(){
+			alert(111);
+		}, 5000));
+	});
+</script>
